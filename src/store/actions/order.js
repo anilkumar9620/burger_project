@@ -94,7 +94,7 @@ export const orderDelete = (id,token) =>{
     return dispatch => {
         dispatch(orderDeleteServer(id));
 
-        axios.delete('https://react-my-burger-6abe1.firebaseio.com/orders/'+id+'.json?auth='+token)
+        axios.delete('"enter base firebase url"/orders/'+id+'.json?auth='+token)
         .then(res => {
             
         });

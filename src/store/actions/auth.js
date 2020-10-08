@@ -48,9 +48,9 @@ export const auth = (email,password,isSignUp) => {
             
             returnSecureToken:true
         }
-        let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDOP-j9YeJBe1SerNl2qfzJwCcGnEtbQNE';
+        let url = '"enter sign up url from firebase"';
         if(!isSignUp){
-            url='https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDOP-j9YeJBe1SerNl2qfzJwCcGnEtbQNE';
+            url='"enter sign in url from firebase"';
         }
         axios.post(url,authData)
         .then(response => {
